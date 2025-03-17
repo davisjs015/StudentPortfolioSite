@@ -1,0 +1,468 @@
+@charset "utf-8";
+
+* { box-sizing: border-box; }
+
+.clear { clear:both; }
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+html {
+    font-family: "Lato", sans-serif;
+    line-height: 1.4;
+    background: white !important;
+}
+
+/*---------------------header-------------------------*/
+.header {
+    background: white !important;
+    color: #1a237e;
+    top: 0;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    height: 90px;
+}
+
+.header img {
+    width: 70px;
+    height: 70px;
+}
+
+/*--------------------nav---------------------------*/
+.nav  {
+    width: 75%;
+    top: 20px;
+    right: 10px;
+    float: right;
+    display: block;
+    position: fixed;
+    font-family: 'Lato', sans-serif;
+}
+
+.nav a {
+    right: 0;
+    margin: 0;
+    padding: 15px 16px;
+    vertical-align: middle;
+    text-align: center;
+    float: right;
+    color: #1a237e;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.nav .icon { display: none; }
+
+.drop { float: right; }
+
+.drop .drpbtn {
+    border: none;
+    color: #1a237e;
+    padding: 14px 20px 14px 10px;
+    font-size: 20px;
+    background-color: white;
+    text-align: center;
+}
+
+.nav a:hover, .drop:hover { background-color: #87d8d5; }
+
+.drop-content {
+    display: none;
+    position: absolute;
+    background-color: #87d8d5;
+    top: 45px;
+    right: 0;
+    padding: 14px; 
+    height: 520px;
+    width: 360px;
+    text-align: justify-all;
+    letter-spacing: 0.5px;
+    z-index: 1;
+}
+
+.drop:hover .drop-content { display: block; }
+
+img.navimage { 
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: 0 auto;
+}
+
+h2.navheader { text-align: center; padding: 10px 0 0 0; margin: 0; }
+p.navtext { font-size: 16px !important; letter-spacing: 0.25px; }
+
+a { text-decoration: none; }
+
+/*----------------------hero animation-------------------------*/
+.heroback{
+    overflow: hidden;
+    height: 270px;
+    width: 45%;
+    float: left;
+    padding: 40px 2% 0 2%;
+    margin-top: 100px;
+}
+
+.hero1 { 
+    font-size: 45px; 
+    text-align: center; 
+    padding: 30px auto; 
+    margin: 0; 
+    font-family: 'Lato', sans-serif;
+}
+
+/*-------------------------------motto-------------------------------*/
+.motto {
+    width: 45%;
+    padding: 50px 2% 10px 2%;
+    float: right;
+    margin-top: 100px;
+}
+
+p.mottotext { 
+    font-size: 16px; 
+    font-family: 'Lato', sans-serif; 
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    line-height: 1.7 !important;
+    text-align: center;
+    background: #1a237e;
+    color: white !important;
+    padding: 20px;
+    height: 120px; 
+}
+
+/*----------------------------main----------------------------*/
+
+.main { margin: 0 0 100px 0; padding-top: 20px; }
+
+/*-----------------------------footer and footer social media---------------------*/
+.footer {
+    clear: both;
+    background-color: #1a237e;
+    color: white !important;
+    padding: 10px;
+    
+}
+
+h4.footer { 
+    font-size: 14px; 
+    font-weight: 100; 
+    padding: 0; 
+    left: 20px; 
+    text-align: left;
+    vertical-align: middle;
+    float: left;
+}
+
+.sm-icons-footer  { right: 20px; text-align: right; vertical-align: middle; }
+.sm-icons-footer ul li { display: inline-block; vertical-align: middle; }
+.sm-icons-footer img { 
+	width: 40px; 
+	height: 20px; 
+	padding: 0 10px; 
+	vertical-align: middle; 
+	text-align: right; 
+	float: right; 
+	right: 20px; 
+}
+
+/*---------------------------horizontal lines-------------------------*/
+.hortline {
+    border: 1.25px solid #ff66cc;
+    width: 100%;
+    height: 1.25px;
+    padding: 0;
+    margin-left: 0.25%;
+}
+
+.hortlineproject1 {
+    border-bottom: 2.5px solid #ff66cc;
+    width: auto;
+    height: 40px;
+    padding: 0;
+    margin-left: 0.25%;
+}
+
+.hortlineproject {
+    border-bottom: 2.5px solid #ff66cc;
+    width: auto;
+    height: 58px;
+    padding: 0;
+    margin-left: 0.25%;
+}
+
+/*----------------------------- project page styling ---------------------------*/
+.topproject { margin: 95px 0 30px 0; padding: 0 auto; left: 30px; }
+
+.projectbox { margin: 40px 0 40px 0; padding: 0 auto; }
+
+.projectmain {
+    width: 50%;
+    height: auto;
+    margin: 30px auto 20px auto;
+    padding: 0;
+}
+
+.projectcenter { margin: 40px 0 30px 0; padding: 0 auto; }
+
+.projectbottom { margin: 30px 0 120px 0; padding: 0 auto; height: auto; }
+
+.projectdesk, .projectmobile {
+    width: 24.9999%;
+    height: auto;
+    padding: 40px 20px;
+    float: left;
+}
+
+img.projectmain {
+    display: block;
+    margin: auto;
+    width: 100%;
+    padding: 40px 0 0 0;
+}
+
+.projectcontain { /*project page with 3 images */
+    width: 32%;
+    height: auto;
+    padding: 20px 0;
+    float: left;
+}
+
+.projectcontain1 {
+    width: 48%;
+    height: auto;
+    padding: 30px 0;
+    float: left;
+}
+
+.projectcontainmobile {
+    width: 20%;
+    height: auto;
+    padding: 20px 0;
+    float: left;
+}
+
+.projectcontainmobile1 {
+    width: 32%;
+    height: auto;
+    padding: 30px 0;
+    float: left;
+}
+
+.projectimage {
+    display: block;
+    width: 100%;
+    padding: 40px 20px;
+    height: auto;
+}
+
+.leftbox, .rightbox {
+    width: 40%;
+    height: 275px;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    padding: 30px 30px;
+}
+
+.leftbox { float: left; padding: 30px 20px 40px 20px; }
+.rightbox { float: right; padding: 40px 20px 20px 20px; }
+
+.leftbox1, .rightbox1 {
+    width: 40%;
+    height: 275px;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+.leftbox1 { float: left; padding: 30px 20px 30px 20px;}  
+.rightbox1 { float: right; padding: 40px 20px 20px 20px;}  
+
+/*----------------------- h tags and p tags--------------------------------------*/
+h2, h3, h4, h5, h6, p { color: #1a237e; }
+
+h2 { font-size: 40px; font-weight: 500; }
+
+h3 { font-size: 22px; font-weight: 400; }
+
+h4 { font-size: 16px; font-weight: 100; color: white !important; }
+
+h2#work { font-size: 45px; font-weight: 600; text-align: center; }
+
+h2.type { font-size: 45px; color: #ff66cc; float: right; padding-left: 20px }
+
+p { font-size: 16px; }
+
+/*----------------------------------contact tab - social media icons-----------------------------*/
+
+.sm-icons  { float: left; }
+.sm-icons a { display: inline-block; padding: 20px 20px; }
+.sm-icons img { width: 36px; height: 24px; padding: 30px auto 0 auto; }
+
+/*------------------------------portfolio grid images------------------------------------*/
+.contain {
+  position: relative;
+  width: 33%;
+  height: auto;
+  float: left;
+  padding: 20px 10px;
+  margin: 0;
+  vertical-align: top;
+  display: block;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  padding: 40px 20px;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.bottLeft {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  bottom: 10px;
+  left: 18px;
+}
+
+.contain:hover .image {
+  opacity: 0.3;
+}
+
+.contain:hover .bottLeft {
+  opacity: 1;
+}
+
+.text {
+  padding: 40px 10px 10px 10px;
+}
+
+.text p {
+  font-size: 12px;
+  font-family: 'Lato', sans-serif;
+  color: #1a237e;
+  font-weight: 100;
+}
+
+/*--------------------- mobile -------------------------------*/
+[class*="col-"] {
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+
+.col-m-1 {width: 16.66%;}
+.col-m-2 {width: 33.33%;}
+.col-m-3 {width: 50%;}
+.col-m-4 {width: 66.66%;}
+.col-m-5 {width: 83.33%;}
+.col-m-6 {width: 100%;}
+
+.drop:hover .drop-content { width: 300px; height: 340px; padding: 14px; }
+
+.sm-icons img { width: 28px; height: 20px; padding: 40px auto 0 auto; text-align: center; }
+
+img.navimage { display: none; }
+
+p.navtext { font-size: 14px !important; letter-spacing: 0.6px; }
+
+.heroback { width: 100%; padding: 0 auto; float: none; }
+
+.motto { width: 100%; margin: 0 auto; padding: 20px 10px; float: none; height: 190px; }
+
+p.mottotext { padding: 30px 20px; height: 150px; line-height: 1.5 !important; letter-spacing: 0.4px; }
+
+.main { margin: 0 0 80px 0; }
+
+.contain { width: 98%; margin: 0 auto; }
+
+.contain:hover .image { opacity: 0.1; }
+
+.hortlineproject { height: 45px; }
+.hortlineproject1 { height: 35px; }
+
+.projectmain {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.projectdesk, .projectmobile { width: 98%; }
+
+.projectcontain, .projectcontain1, .projectcontainmobile, .projectcontainmobile1 { width: 98%; }
+
+.projectbox { margin: 20px 0; padding: 0 auto;}
+
+.leftbox, .rightbox {
+    width: 100%;
+    height: 370px;
+    padding: 40px auto;
+    float: none;
+}
+
+.leftbox1, .rightbox1 {
+    width: 100%;
+    height: 370px;
+    padding: 40px auto;
+    float: none;
+}
+
+.sm-icons img { width: 26px; height: 20px; padding: 40px auto 0 auto; }
+
+.sm-icons-footer img { width: 34px; height: 18px; vertical-align: middle; float: right; right: 10px; padding: auto 20px; }
+
+h4.footer { font-size: 10px; vertical-align: middle; float: left; left: 10px; padding: 10px 20px 10px 0; }
+
+h1 { font-size: 40px; }
+
+h2 { font-size: 30px;  }
+
+h3 { font-size: 20px; }
+
+h4 { font-size: 14px; color: white !important; }
+
+h2#work { font-size: 40px; }
+
+h2.type { font-size: 40px; color: #ff66cc; }
+
+h4.footer { font-size: 12px; }
+
+h1.hero { font-size: 40px; }
+
+p { font-size: 15px; }
+
+}
+
+/*---------------------- desktop ------------------------------*/
+@media only screen and (min-width: 760px) {
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+}
